@@ -30,9 +30,23 @@ div(ng-include='\'partials/navbar.html\'')
       button.btn.btn-lg.btn-primary(type='submit')  Sign in 
       span.clearfix
 
+
+| Sign in with
 .row
-  .col-sm-12
-    hr
-    | Not registered? 
-    a.text-center.new-account(href='/signup') Create an account.
-    a(ng-click="loginFacebook()") Login via Facebook
+  .col-sm-3
+      button.btn.btn-block.btn-facebook-inversed(ng-click="loginFacebook()") 
+       i.fa.fa-facebook  Facebook 
+  .col-sm-3
+      button.btn.btn-block.btn-googleplus-inversed(ng-click="loginGoogle()") 
+       i.fa.fa-google-plus  Google
+  .col-sm-3
+      button.btn.btn-block.btn-dropbox-inversed(ng-click="loginDropbox()")
+        i.fa.fa-dropbox  Dropbox
+  .col-sm-3
+      button.btn.btn-block.btn-github-inversed(ng-click="loginGithub()")
+        i.fa.fa-github  Github
+
+| Or 
+a(href="/signup") Create an account
+  
+ 

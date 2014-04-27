@@ -21,4 +21,7 @@ angular.module('monocleApp')
           $scope.errors.other = err.message;
 
     $scope.loginFacebook = ->
+      window.location.href = "http://localhost:9000/api/session/facebook"
+    $scope.loginGithub = ->
       window.location.href = "http://localhost:9000/api/session/github"
+
