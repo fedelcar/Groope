@@ -26,4 +26,6 @@ angular.module('monocleApp')
       window.location.href = "http://localhost:9000/api/session/github"
     $scope.loginGoogle = ->
       window.location.href = "http://localhost:9000/api/session/google"
+    $scope.loginDropbox = ->
+      window.location.href = "http://localhost:9000/api/session/dropbox"
 
