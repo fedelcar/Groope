@@ -1,22 +1,28 @@
 div.partial(ng-include='\'partials/navbar\'')
 
-.jumbotron
-  h1
-    | 'Allo, 'Allo 
-    span(ng-show='currentUser') {{ currentUser.name }}
-    | !
+div.row
+  div.col-md-12(ng-include='\'partials/sidebar\'')
+      div.col-md-10
 
-  p.lead
-    <img src="images/yeoman.png" alt="I'm Yeoman">
-    br
-    | Always a pleasure scaffolding your apps.
-  p
-    a.btn.btn-lg.btn-success(ng-href='#') Splendid!
-    
-.row.marketing
-  div(ng-repeat='thing in awesomeThings')
-    h4 {{thing.name}}
-    p {{thing.info}}
+        .jumbotron
+          h1
+            | Roman Roman
+            span(ng-show='currentUser') {{ currentUser.name }}
+            
 
-.footer
-  p ♥ from the Yeoman team
+          p.lead
+            <img src="http://3.bp.blogspot.com/_3VzUEunqqnY/TLPrZfAPVyI/AAAAAAAAE0E/Ny4_IZfY_YI/s1600/Juan+Rom%C3%A1n+Riquelme.jpg" alt="I'm Yeoman">
+           
+          p
+            a.btn.btn-lg.btn-success(ng-href='#') Renovame!
+            
+        .row.marketing
+          div(ng-repeat='thing in awesomeThings')
+            h4 {{thing.name}}
+            p {{thing.info}}
+
+
+
+
+        .footer
+          p ♥ from the Yeoman team
