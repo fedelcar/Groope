@@ -53,6 +53,12 @@ body {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.jumbotron h1{
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    color:blue;
+}
+
 .jumbotron .btn {
     font-size: 21px;
     padding: 14px 24px;
@@ -71,8 +77,10 @@ body {
     padding-top: 30px;
 }
 
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
+
     .container {
     }
 
