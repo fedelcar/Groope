@@ -11,12 +11,14 @@ angular.module('monocleApp')
       if form.$valid
         Auth.createUser(
           name: $scope.user.name
-          email: $scope.user.email
+          emails: [$scope.user.email]
+          local: { emails: [$scope.user.email] }
           password: $scope.user.password
         ).then( ->
           # Account created, redirect to home
           $location.path '/'
         ).catch( (err) ->
+          console.log(err)
           err = err.data
           $scope.errors = {}
           
