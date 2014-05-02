@@ -3,9 +3,6 @@
 angular.module('monocleApp')
   .controller 'NavbarCtrl', ($scope, $location, Auth) ->
     $scope.menu = [
-      title: 'Home'
-      link: '/'
-    , 
       title: 'Settings'
       link: '/settings'
     ]
