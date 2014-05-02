@@ -1,28 +1,26 @@
 div.partial(ng-include='\'partials/navbar\'')
 
 div.row
-  div.col-md-12(ng-include='\'partials/sidebar\'')
-      div.col-md-10
+  div.col-md-2(ng-include='\'partials/sidebar\'')
+  
+  div.col-md-10
 
-        .jumbotron
-          h1
-            | Roman Roman
-            span(ng-show='currentUser') {{ currentUser.name }}
-            
+    .jumbotron
+      h1
+        | Roman Roman
+        span(ng-show='currentUser') {{ currentUser.name }}
+        
 
-          p.lead
-            <img src="http://3.bp.blogspot.com/_3VzUEunqqnY/TLPrZfAPVyI/AAAAAAAAE0E/Ny4_IZfY_YI/s1600/Juan+Rom%C3%A1n+Riquelme.jpg" alt="I'm Yeoman">
-           
-          p
-            a.btn.btn-lg.btn-success(ng-href='#') Renovame!
-            
-        .row.marketing
-          div(ng-repeat='thing in awesomeThings')
-            h4 {{thing.name}}
-            p {{thing.info}}
+      p.lead
+        <img src="http://3.bp.blogspot.com/_3VzUEunqqnY/TLPrZfAPVyI/AAAAAAAAE0E/Ny4_IZfY_YI/s1600/Juan+Rom%C3%A1n+Riquelme.jpg" alt="I'm Yeoman">
+       
+      p
+        a.btn.btn-lg.btn-success(ng-href='#') Renovame!
+        
+    .row.marketing
+      div(ng-repeat='thing in awesomeThings')
+        h4 {{thing.name}}
+        p {{thing.info}}
 
-
-
-
-        .footer
-          p ♥ from the Yeoman team
+    .footer
+      p ♥ from the Yeoman team
