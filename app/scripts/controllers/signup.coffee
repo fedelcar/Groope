@@ -12,7 +12,10 @@ angular.module('monocleApp')
         Auth.createUser(
           name: $scope.user.name
           emails: [$scope.user.email]
-          local: { emails: [$scope.user.email] }
+          local: { 
+            emails: [$scope.user.email], 
+            name: $scope.user.name 
+          }
           password: $scope.user.password
         ).then( ->
           # Account created, redirect to home
