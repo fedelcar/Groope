@@ -22,6 +22,10 @@ angular.module('monocleApp', [
         templateUrl: 'partials/settings'
         controller: 'SettingsCtrl'
         authenticate: true
+      .when '/newgroope',
+        templateUrl: 'partials/newgroope'
+        controller: 'NewGroopeCtrl'
+        authenticate: true 
       .otherwise
         redirectTo: '/'
 
